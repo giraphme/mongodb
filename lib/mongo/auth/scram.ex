@@ -60,7 +60,7 @@ defmodule Mongo.Auth.SCRAM do
   end
 
   defp second(
-         %{"conversationId" => conversation_id, "payload" => payload, "done" => false},
+         %{"conversationId" => conversation_id, "payload" => payload},
          [saslContinue: 1, conversationId: message_conversation_id, payload: _],
          signature
        )
