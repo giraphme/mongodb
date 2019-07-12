@@ -34,7 +34,7 @@ defmodule Mongo.Auth.SCRAM do
   end
 
   defp first(
-         %{"conversationId" => conversation_id, "payload" => server_payload, "done" => false},
+         %{"conversationId" => conversation_id, "payload" => server_payload},
          first_bare,
          username,
          password,
